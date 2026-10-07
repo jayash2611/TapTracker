@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Tap Tracker",
+  "short_name": "TapTracker",
+  "description": "One-tap habit and expense tracker",
+  "lang": "hi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1c2130",
+  "theme_color": "#1c2130",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

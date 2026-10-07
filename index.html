@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1c2130">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>Tap Tracker</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
 <style>
@@ -153,6 +156,7 @@ document.querySelector("nav").addEventListener("click",function(e){var t=e.targe
  ["today","ins","set"].forEach(function(k){$("#t-"+k).classList.toggle("hide",k!==t)});
  Array.prototype.forEach.call(this.children,function(b){b.classList.toggle("on",b===e.target)});window.scrollTo(0,0)});
 render();
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}
 </script>
 </body>
 </html>
